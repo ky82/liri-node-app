@@ -26,6 +26,7 @@ Depending on the command you run, the output will vary.
 
  node liri.js concert-this <name of artist or band>
 Output: The system will display a list of all events and locations where the artist or band will perform. It can result in multiple records. The system will also log all the results in the log.txt file. See screen-shot below:
+ 
 ![concert](https://user-images.githubusercontent.com/52688618/66103628-3c73e380-e56b-11e9-9643-d59f4d5ef3bf.PNG)
 
 # Example 2: Run the spotify-this-song command
@@ -39,21 +40,23 @@ Output: The system will display a list of information associated with the song. 
 
  node liri.js movie-this <name of movie>
 Output: The system will display information associated with the movie. The system will also log all the results in the log.txt file. See screen-shot below:
+ 
 ![movie](https://user-images.githubusercontent.com/52688618/66103774-95437c00-e56b-11e9-9374-d8898be6c336.PNG)
 
 # Example 4: Run the do-what-it-says command
 
  node liri.js do-what-it-says
-Output: The system will read the text in the random.txt file, and perform the comman listed in the random.txt file.
-
-See screen-shot below:
+Output: The system will read the text in the random.txt file, and perform the comman listed in the random.txt file. See screen-shot below:
 
 ![do-what-it-says](https://user-images.githubusercontent.com/52688618/66103851-c15efd00-e56b-11e9-86cf-1986944762dd.PNG)
 
 # TECHNOLOGIES USED
-Javascript
-Nodejs
-Node packages:
+Javascript  
+
+Nodejs  
+
+Node packages:  
+
 Node-Spotify-API
 Request
 Moment
