@@ -51,18 +51,15 @@ Output: The system will read the text in the random.txt file, and perform the co
 ![do-what-it-says](https://user-images.githubusercontent.com/52688618/66103851-c15efd00-e56b-11e9-86cf-1986944762dd.PNG)
 
 # TECHNOLOGIES USED
-Javascript  
-
-Nodejs  
-
-Node packages:  
-
-Node-Spotify-API
-Request
-Moment
-DotEnv
-APIs used:
-Bands in Town
-OMDB
-Git
-GitHub
+- Javascript  
+- Nodejs  
+- Node packages:  
+  - Node-Spotify-API  
+  - Request  
+  - Moment  
+ - DotEnv  
+- APIs used:  
+  - Bands in Town  
+  - OMDB
+- Git
+- GitHub
