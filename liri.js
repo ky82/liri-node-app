@@ -52,10 +52,7 @@ else
 	movieName = parameter;
 }
 
-
-
-var queryUrl = "https://rest.bandsintown.com/artists/"+movieName+"/events?app_id=codecademy";
-
+var queryUrl = "https://rest.bandsintown.com/artists/"+movieName+"/events?app_id=codingbootcamp";
 
 request(queryUrl, function(error, response, body) {
 
@@ -69,10 +66,7 @@ request(queryUrl, function(error, response, body) {
         var year = dTime.substring(0,4);
         var day = dTime.substring(8,10);
         var dateForm = month + "/" + day + "/" + year
-  
       logIt("\n---------------------------------------------------\n");
-
-        
       logIt("Date: " + dateForm);
       logIt("Name: " + JS[i].venue.name);
       logIt("City: " + JS[i].venue.city);
@@ -88,8 +82,6 @@ request(queryUrl, function(error, response, body) {
 });
 }
 function spotSong(parameter) {
-
-
   var searchTrack;
   if (parameter === undefined) {
     searchTrack = "The Sign ace of base";
@@ -117,16 +109,13 @@ function spotSong(parameter) {
 };
 function movieInfo(parameter) {
 
-
   var findMovie;
   if (parameter === undefined) {
     findMovie = "Mr. Nobody";
   } else {
     findMovie = parameter;
   };
-
   var queryUrl = "http://www.omdbapi.com/?t=" + findMovie + "&y=&plot=short&apikey=trilogy";
-  
   request(queryUrl, function(err, res, body) {
   	var bodyOf = JSON.parse(body);
     if (!err && res.statusCode === 200) {
@@ -143,17 +132,12 @@ function movieInfo(parameter) {
     }
   });
 };
-
 function getRandom() {
 fs.readFile('random.txt', "utf8", function(error, data){
-
     if (error) {
         return logIt(error);
       }
-
-  
     var dataArr = data.split(",");
-    
     if (dataArr[0] === "spotify-this-song") 
     {
       var songcheck = dataArr[1].trim().slice(1, -1);
@@ -187,16 +171,11 @@ fs.readFile('random.txt', "utf8", function(error, data){
 };
 
 function logIt(dataToLog) {
-
 	console.log(dataToLog);
-
 	fs.appendFile('log.txt', dataToLog + '\n', function(err) {
-		
 		if (err) return logIt('Error logging data to file: ' + err);	
 	});
 }
-
-
 switchCase();
 
 
